@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  background-color: #1E1F26;
+  font-family: 'Muli', sans-serif
+}
+
+:focus {
+  outline: none
+}
+
+/* ==-====-===-==== */
+
+.container {
+  width: 100%;
+  height: auto
+}
+
+.box {
+  width: 80%;
+  height: 58px;
+  background-color: #fff;
+  margin: 20px auto;
+  box-shadow: 0 2px 33px rgba(0,0,0,.77)
+}
+
+.search-bar {
+  width: 55%;
+  margin: 40px auto;
+  line-height: 56px;
+  position: relative
+}
+
+input[type="text"] {
+  width: 89%;
+  height: 33px;
+  padding: 0 10px;
+  color: #000;
+  border: 1px solid #BEBEBE;
+  border-radius: 2px 0 0 2px;
+  z-index: 2
+}
+
+input:focus {
+  border: 1.1px solid #1c62b9;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.4);
+}
+
+button {
+  position: absolute;
+  width: 11%;
+  height: 33px;
+  border: 1px solid #BEBEBE;
+  border-left: 0;
+  top: 13px;
+  right: 0;
+  border-radius: 0px 2px 2px 0;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  background-color: #f0f0f0;
+  z-index: 1
+}
+
+button i {
+  opacity: .5;
+  transition: all .07s ease-in-out
+}
+
+button:hover i {
+  opacity: .95
+}
+
+button:hover {
+  background-color: #E4E4E4;
+  box-shadow: 0 1px 1px rgba(0,0,0,.15),
+    inset 0 0 2px rgba(0,0,0,.05);
+  transition: all .07s ease-in-out
+}
+
+/* ==-====-===-==== */
+
+h2 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  text-shadow: 0 0 20px black;
+  cursor: none;
+  margin-top: 22px
+}
+</style>
+	<head>
+		<title>Medical E-Consultancy</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/responsiveslides.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/responsiveslides.min.js"></script>
+		  <script>
+		    // You can also use "$(window).load(function() {"
+			    $(function () {
+			
+			      // Slideshow 1
+			      $("#slider1").responsiveSlides({
+			        maxwidth: 1600,
+			        speed: 600
+			      });
+			});
+		  </script>
+	</head>
+	<body>
+		<!--start-wrap-->
+		
+			<!--start-header-->
+			<div class="header">
+				<div class="wrap">
+				<!--start-logo-->
+				<div class="logo">
+					<a href="index.html" style="font-size: 30px;"><b>Medical E-Consultancy<b><br></a>
+				</div>
+				<!--end-logo-->
+				<!--start-top-nav-->
+				<div class="top-nav">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						
+						<li><a href="contact.php">contact</a></li>
+					</ul>					
+				</div>
+				<div class="clear"> </div>
+				<!--end-top-nav-->
+			</div>
+			<!--end-header-->
+		</div>
+		<div class="clear"> </div>
+			<!--start-image-slider---->
+					<div class="image-slider">
+						<!-- Slideshow 1 -->
+					    <ul class="rslides" id="slider1">
+					      <li><img src="images/a.jpg" alt=""></li>
+					      <li><img src="images/b.jpg" alt=""></li>
+					      <li><img src="images/a.jpg" alt=""></li>
+					    </ul>
+						 <!-- Slideshow 2 -->
+					</div>
+					<!--End-image-slider---->
+		    <div class="clear"> </div>
+		    <div class="content-grids">
+		    	<div class="wrap">
+		    	<div class="section group">
+								
+							
+				<div class="listview_1_of_3 images_1_of_3">
+					<div class="listimg listimg_1_of_2">
+						  <img src="images/pa.png">
+					</div>
+					<div class="text list_1_of_2">
+						  <h3>Patients</h3>
+						  <p>Register & Book Appointment</p>
+						  <div class="button"><span><a href="hms/user-login.php">Click Here</a></span></div>
+				    </div>
+				</div>	
+
+				<div class="listview_1_of_3 images_1_of_3">
+					<div class="listimg listimg_1_of_2">
+						  <img src="images/grid-img1.jpg">
+					</div>
+					<div class="text list_1_of_2">
+						  <h3>Doctors Login</h3>
+						
+						  <div class="button"><span><a href="hms/doctor/">Click Here</a></span></div>
+					</div>
+				</div>
+
+
+					<div class="listview_1_of_3 images_1_of_3">
+					<div class="listimg listimg_1_of_2">
+						  <img src="images/admin.png">
+					</div>
+					<div class="text list_1_of_2">
+						  <h3>Admin Login</h3>
+						
+						  <div class="button"><span><a href="hms/admin">Click Here</a></span></div>
+				     </div>
+				</div>			
+			</div>
+		    </div>
+		   </div>
+		   <div class="wrap">
+		   <div class="content-box">
+		   <div class="section group">
+				<div class="col_1_of_3 span_1_of_3 frist">
+				
+				</div>
+				<div class="col_1_of_3 span_1_of_3 second">
+					
+				</div>
+				<div class="col_1_of_3 span_1_of_3 frist">
+					
+					
+				</div>
+			</div>
+		   </div>
+		   </div>
+		   <center>
+		   
+		  <h1 style="font-size: 40px;"><center>Awareness Videos</center></h1>
+		  
+		  <div class="container">
+  <div class="box">
+    <div class="search-bar">
+	  <form action="http://www.youtube.com/results" method="get" target="_blank" >
+<input name="search_query" type="text" maxlength="128" />
+<input type="submit" value="Search" />
+        <button>Search</button>
+      </form>
+    </div>
+  </div>
+</div>
+			
+
+		<iframe width="800" height="550" align=center
+src="https://www.youtube.com/embed/CrZFhRr7dKs?controls=0">
+</iframe>
+</center>
+		   <div class="clear"> </div>
+		   <div class="footer">
+		   	 <div class="wrap">
+		   	<div class="footer-left">
+		   			<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="contact.php">contact</a></li>
+					</ul>
+		   	</div>
+		   
+		   	<div class="clear"> </div>
+		   </div>
+		   </div>
+		<!--end-wrap-->
+	</body>
+</html>
+
