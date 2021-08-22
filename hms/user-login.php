@@ -6,7 +6,7 @@ if(isset($_POST['submit']))
 {
 $ret=mysqli_query($con,"SELECT * FROM users WHERE email='".$_POST['username']."' and password='".md5($_POST['password'])."'");
 $num=mysqli_fetch_array($ret);
-if($num>0
+if($num>0)
 {
 $extra="dashboard.php";//
 $_SESSION['login']=$_POST['username'];
